@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import { Item } from '../../shared/entities/Item.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { UpdateItemDto } from '../dto/update-Item.dto';
+import { UpdateItemDto } from 'src/items/dto/update-Item.dto';
+import { Item } from 'src/shared/entities/item.entity';
 
 @Injectable()
 export class EditItemUseCase {

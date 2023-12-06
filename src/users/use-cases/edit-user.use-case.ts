@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import { User } from '../../shared/entities/user.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { UpdateUserDto } from '../dto/update-user.dto';
+import { User } from 'src/shared/entities/user.entity';
 
 @Injectable()
 export class EditUserUseCase {
