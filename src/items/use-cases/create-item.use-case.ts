@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import { Item } from '../../shared/entities/Item.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { CreateItemDto } from '../dto/create-Item.dto';
+import { Item } from 'src/shared/entities/item.entity';
+import { CreateItemDto } from 'src/items/dto/create-item.dto';
 
 @Injectable()
 export class CreateItemUseCase {
